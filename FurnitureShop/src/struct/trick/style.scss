@@ -1,0 +1,13 @@
+.trick {
+    display: flex;
+    flex-direction: column;
+
+    &__info {
+        padding: 1rem;
+
+        & span {
+            font-size: 0.875rem;
+            color: $color-gray-3;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@media (min-width: 576px)
+    .detail-project
+        position: relative
+        margin-top: 5%
+
+    .detail-project:before
+        content: ""
+        position: absolute
+        left: 50%
+        width: 3px
+        background-color: $color-sub-text
+        top: -5%
+        height: 25%
+
+    .detail-project__prev-btn,
+    .detail-project__next-btn
+        height: max-content
+        position: absolute
+        top: 27vw
+
+    .detail-project__prev-btn
+        transform: rotate(270deg)
+        left: -88px
+
+    .detail-project__next-btn
+        transform: rotate(90deg)
+        right: -66px
+
+    .detail-project__preview
+        width: 80%
+        padding-top: 80%
+
+    .detail-project__detail-text
+        margin: 30px 0

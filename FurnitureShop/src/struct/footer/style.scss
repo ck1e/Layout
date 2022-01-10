@@ -1,0 +1,48 @@
+.footer {
+    flex: 0 0 auto;
+    font-size: 0.8rem;
+    font-family: Gilroy;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 150%;
+    color: $color-gray-2;
+    padding: 3.125rem 0;
+
+    &__info {
+        &-text {
+            width: 250px !important;
+        }
+        & i {
+            margin-right: 8px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.5rem;
+            line-height: 120%;
+            color: $color-black;
+        }
+
+        &:not(:last-child) {
+            margin-right: 5rem;
+        }
+
+        & > *:not(:last-child) {
+            width: max-content;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__form {
+        & input {
+            width: 242px;
+        }
+    }
+}

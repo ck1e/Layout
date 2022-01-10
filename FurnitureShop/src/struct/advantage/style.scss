@@ -1,0 +1,25 @@
+.advantage {
+    display: flex;
+    align-items: center;
+    max-width: max-content;
+    padding: 1.5rem;
+    padding-right: 0;
+
+    & > img {
+        margin-right: 1.5rem;
+    }
+
+    &__info {
+        & > span {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.125rem;
+            line-height: 150%;
+        }
+
+        & > p {
+            color: $color-gray-3;
+        }
+    }
+}

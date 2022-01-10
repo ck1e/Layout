@@ -1,0 +1,264 @@
+.main {
+    flex: 1 0 auto;
+
+    & h2 {
+        text-align: center;
+    }
+
+    &__slider {
+        position: relative;
+        padding: 8.75rem 0 5rem 0;
+        overflow: hidden;
+        margin-bottom: 5.5rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 66.666%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $color-bg-1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 33.333%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background-color: $color-bg-2;
+        }
+
+        & .info {
+            position: relative;
+            z-index: 2;
+        }
+
+        &-splide {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 1;
+
+            & .product {
+                background-size: cover;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding: 2.5rem;
+
+                &__info {
+                    display: none;
+                    max-width: max-content;
+                    width: 50%;
+                    padding: 1.5rem;
+
+                    & > button {
+                        background: none;
+                        color: #000;
+                        margin-left: 3.5625rem;
+                        align-self: flex-end;
+                        padding: 0;
+                        height: auto;
+                    }
+                }
+
+                &__price {
+                    & span:nth-child(2) {
+                        margin-left: 1rem;
+                    }
+                }
+
+                &.is-active .product__info {
+                    display: flex;
+                }
+            }
+
+            & .splide {
+                &__arrows {
+                    max-width: 1240px;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: auto;
+                    margin-bottom: 1.375rem;
+                }
+
+                &__arrow {
+                    position: inherit;
+                    color: $color-white;
+                    background-color: $color-primary;
+                    transform: none;
+
+                    &:first-child {
+                        margin-right: 0.5rem;
+                    }
+
+                    &.--disable {
+                        color: $color-primary;
+                        background-color: $arrow-splide--disable;
+                    }
+                }
+
+                &__pagination {
+                    top: 1.5rem;
+                    bottom: initial;
+                }
+            }
+        }
+    }
+
+    &__advantages {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5.5rem;
+
+        & .advantage {
+            width: 25%;
+        }
+    }
+
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem;
+        margin-bottom: 2.75rem;
+
+        & > h2 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        & > button {
+            width: 15.3125rem;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            justify-self: center;
+        }
+    }
+
+    &__rooms {
+        padding: 2.75rem 0;
+        background-color: $color-bg-2;
+        margin-bottom: 2.75rem;
+        overflow: hidden;
+
+        & > .container {
+            position: relative;
+            display: grid;
+            grid-template-rows: 36.375rem;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 5.375rem;
+        }
+
+        &-info {
+            align-self: center;
+
+            & > h2 {
+                text-align: left;
+            }
+
+            & > p {
+                margin-bottom: 1.5rem;
+                margin-top: 0.5rem;
+            }
+
+            & > button {
+                width: 11rem;
+            }
+        }
+
+        & .splide {
+            margin-right: -6.5rem;
+            position: absolute;
+            right: 0;
+
+            &__track,
+            &__list {
+                height: 100%;
+            }
+
+            .room {
+                width: 23.25rem !important;
+                height: 30.375rem;
+
+                &__info {
+                    display: none;
+                }
+
+                & > button {
+                    display: none;
+                }
+
+                &.is-active {
+                    width: 25.25rem !important;
+                    height: 36.375rem;
+
+                    & .room__info,
+                    & button {
+                        display: block;
+                    }
+                }
+            }
+
+            &__arrow {
+                &--prev {
+                    left: -1.5rem;
+                    display: none;
+                }
+
+                &--next {
+                    right: 3.5rem;
+                }
+            }
+
+            &__pagination {
+                left: 59%;
+                bottom: 6%;
+            }
+        }
+    }
+
+    &__tricks {
+        margin-bottom: 2.75rem;
+
+        & > h2 {
+            margin-bottom: 2rem;
+        }
+
+        & .splide {
+            &__slide {
+                margin-bottom: 2.6875rem;
+
+                &.is-active {
+                    box-shadow: $trick--shadow;
+                }
+            }
+
+            &__arrow {
+                &--prev {
+                    left: -1.5rem;
+                }
+
+                &--next {
+                    right: -1.5rem;
+                }
+            }
+        }
+    }
+
+    &__funiro {
+        overflow: hidden;
+        margin-bottom: 5.5rem;
+
+        & > span {
+            margin-bottom: 0.5rem;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__hr {
+        border: 1px solid $color-gray-5;
+    }
+}

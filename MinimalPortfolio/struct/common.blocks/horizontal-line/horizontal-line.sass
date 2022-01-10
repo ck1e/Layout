@@ -1,0 +1,17 @@
+.horizontal-line
+   position: relative
+
+.horizontal-line:before,
+.horizontal-line:after
+   content: ''
+   position: absolute
+   top: 50%
+   background: $color-main-text
+   height: 3px
+   width: 40px
+
+.horizontal-line:before
+   left: 0
+
+.horizontal-line:after
+   right: 0

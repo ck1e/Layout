@@ -1,0 +1,10 @@
+.logo {
+    & > span {
+        font-size: 1.5rem;
+        font-family: Gilroy;
+        font-weight: bold;
+        font-style: normal;
+        line-height: 120%;
+        color: $color-black;
+    }
+}

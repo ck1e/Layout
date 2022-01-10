@@ -1,0 +1,25 @@
+.icons {
+    display: flex;
+
+    &__icon {
+        background: none;
+        color: $color-black;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__user {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-image: url(../media/img/user.jpg);
+        background-position: center;
+        background-size: contain;
+    }
+}

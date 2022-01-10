@@ -1,0 +1,42 @@
+$fa-font-path: "../../lib/fontawesome/webfonts";
+
+@import "../lib/fontawesome/scss/fontawesome";
+@import "../lib/fontawesome/scss/solid.scss";
+@import "../lib/fontawesome/scss/brands.scss";
+@import "../lib/fontawesome/scss/regular.scss";
+
+// titile, button text and sub heading
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-SemiBold.eot?) format("eot"), url(../fonts/Gilroy-SemiBold.woff) format("woff"),
+        url(../fonts/Gilroy-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+// main text and link
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Medium.eot?) format("eot"), url(../fonts/Gilroy-Medium.woff) format("woff"),
+        url(../fonts/Gilroy-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+// sub text (data and old price), placeholder and text for footer
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Regular.eot?) format("eot"), url(../fonts/Gilroy-Regular.woff) format("woff"),
+        url(../fonts/Gilroy-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// h1-h6, logo and footer heading navigation
+@font-face {
+    font-family: "Gilroy";
+    src: url(../fonts/Gilroy-Bold.eot?) format("eot"), url(../fonts/Gilroy-Bold.woff) format("woff"),
+        url(../fonts/Gilroy-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}

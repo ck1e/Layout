@@ -1,0 +1,96 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &__info {
+        padding: 1rem 2rem 2rem 1rem;
+        background-color: $color-ligth-bg;
+        word-break: break-all;
+
+        & h5 {
+            margin-bottom: 0.4rem;
+        }
+
+        & p {
+            color: $color-gray-3;
+            margin-bottom: 0.4rem;
+        }
+    }
+
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & span:nth-child(1) {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.25rem;
+            line-height: 150%;
+        }
+
+        & span:nth-child(2) {
+            color: $color-gray-4;
+            text-decoration: line-through;
+        }
+    }
+
+    &__label {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        border-radius: 50%;
+        color: $color-white;
+
+        &--discount {
+            background-color: $color-red-accents;
+        }
+
+        &--new {
+            background-color: $color-greed-accents;
+        }
+
+        &--two {
+            right: 5.5rem;
+        }
+    }
+
+    &__hover {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: $product--hover;
+
+        & button {
+            width: 70%;
+            margin-bottom: 1.5rem;
+            border: none;
+        }
+
+        & div {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    &:hover {
+        .product__hover {
+            display: flex;
+        }
+    }
+}

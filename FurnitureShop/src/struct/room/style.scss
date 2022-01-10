@@ -1,0 +1,23 @@
+.room {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    background-size: cover;
+
+    &__info {
+        width: max-content;
+        height: max-content;
+        padding: 2rem;
+        background: $blur--bg;
+
+        & img {
+            vertical-align: middle;
+            margin: 0 0.5rem;
+        }
+    }
+
+    & > button {
+        width: 3rem;
+    }
+}

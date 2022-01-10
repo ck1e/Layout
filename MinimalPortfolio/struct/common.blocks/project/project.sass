@@ -1,0 +1,62 @@
+.project-wrapper
+   width: 100%
+   position: relative
+   display: grid
+   grid-gap: 100px
+
+.project
+   width: 100%
+
+.project__info
+   display: grid
+   grid-template-rows: min-content auto min-content
+   z-index: 1
+
+.project__title
+   text-align: left
+
+.project__description
+   letter-spacing: 0.18px
+
+.project__btn-detail
+   position: relative
+   display: flex
+   width: fit-content
+   align-items: center
+   min-height: 20px
+   margin-bottom: 10px
+
+.project__btn-detail > span
+   width: max-content
+   font-size: initial
+   color: $color-main-text
+   padding-left: 25px
+   position: absolute
+   opacity: 0
+   visibility: hidden
+   transition: opacity .75s, padding-left .75s, visibility 0s linear .75s
+
+.project__btn-detail:hover > span
+   padding-left: 60px
+   visibility: visible
+   opacity: 1
+   transition-delay: 0s
+
+.project__btn-detail:before
+   position: absolute
+   content: ''
+   height: 3px
+   width: 28px
+   background-color: #fff
+   top: 50%
+   left: 0
+
+.project__btn-detail:hover.project__btn-detail:before
+   background-color: $color-sub-text
+   transition: all .75s ease
+
+.project__btn-switch
+   position: absolute
+   top: 25px
+   right: 5%
+   font-size: 2em

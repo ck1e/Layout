@@ -1,0 +1,14 @@
+.info {
+    max-width: 30.875rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3.75rem;
+    background: $blur--bg;
+    backdrop-filter: blur(31px);
+
+    & > p {
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+    }
+}

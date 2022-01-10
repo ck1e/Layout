@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+    font-size: 1rem;
+
+    &__dropdown {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        & > div:first-child {
+            i {
+                margin-left: 8px;
+            }
+        }
+
+        & > div:not(:first-child) {
+            flex-direction: column;
+            position: absolute;
+            background-color: $color-bg-2;
+            border-bottom: 3px solid $color-primary;
+            display: flex;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s, visibility 0s linear 0.4s;
+        }
+
+        &--link {
+            padding: 0.5rem 1rem;
+            color: $color-gray-2;
+            transition: background-color 0.2s ease 0.2s;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $color--link-dropdown;
+            }
+
+            &:hover{
+                background-color: $color--link-dropdown;
+                transition-delay: 0s;
+            }
+        }
+
+        &:hover > div:last-child {
+            opacity: 1;
+            visibility: visible;
+            transition-delay: 0s;
+        }
+    }
+}

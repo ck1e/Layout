@@ -1,0 +1,9 @@
+.funiro {
+    width: max-content;
+    display: inline-flex;
+    align-items: center;
+
+    &__item {
+        margin: 0.5rem;
+    }
+}

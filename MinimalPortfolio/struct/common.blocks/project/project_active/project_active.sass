@@ -1,0 +1,18 @@
+.project_active .project__title
+   color: $color-sub-text
+   display: flex
+   align-items: center
+
+.project_active
+   animation: fadeInLeft 1s ease-in
+
+.project_active .project__preview
+   margin-left: 0
+
+@keyframes fadeInLeft
+   0%
+      opacity: 0
+      transform: translate3d(-5%, 0, 0)
+   100%
+      opacity: 1
+      transform: none

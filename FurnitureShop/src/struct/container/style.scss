@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+        box-sizing: border-box;
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &__col {
+        &-auto {
+            flex: 0 0 auto;
+            width: auto;
+        }
+    }
+}
